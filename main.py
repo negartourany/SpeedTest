@@ -57,9 +57,9 @@ def reset():
     timer(10)
     score = 0
     user_input.delete(0, "end")
-    label.config(fg="#8D0B41",font=("arial", 45, "bold"))
+    label.config(fg="#8D0B41", font=("arial", 45, "bold"))
     random_word = random_word_gen()
-    user_input.bind("<space>",submit)
+    user_input.bind("<space>", submit)
 
 
 # Making the canvas
@@ -84,5 +84,5 @@ canvas.create_window(300, 165, window=second_label)
 btn = Button(text="Reset", font=("arial", 12, "bold"), bg="#A5BFCC", command=reset)
 canvas.create_window(300, 450, window=btn)
 # Making the guide not
-canvas.create_text(200,550,text="*After typing each word, hit space btn to submit",font=("Parkinsans", 12, "normal"))
+canvas.create_text(200, 550, text="*After typing each word, hit space btn to submit", font=("Parkinsans", 12, "normal"))
 window.mainloop()
